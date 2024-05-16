@@ -1,0 +1,17 @@
+syntax = "proto3";
+package loan.loan;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "loan/loan/params.proto";
+
+option go_package = "loan/x/loan/types";
+
+// GenesisState defines the loan module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
