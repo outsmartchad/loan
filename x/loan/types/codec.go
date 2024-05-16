@@ -17,6 +17,9 @@ func RegisterInterfaces(registry cdctypes.InterfaceRegistry) {
 	registry.RegisterImplementations((*sdk.Msg)(nil),
 		&MsgRepayLoan{},
 	)
+	registry.RegisterImplementations((*sdk.Msg)(nil),
+		&MsgLiquidateLoan{},
+	)
 	// this line is used by starport scaffolding # 3
 
 	registry.RegisterImplementations((*sdk.Msg)(nil),
