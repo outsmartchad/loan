@@ -39,6 +39,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					RpcMethod: "UpdateParams",
 					Skip:      true, // skipped because authority gated
 				},
+				{
+					RpcMethod:      "RequestLoan",
+					Use:            "request-loan [amount] [fee] [collateral] [deadline]",
+					Short:          "Send a request-loan tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "amount"}, {ProtoField: "fee"}, {ProtoField: "collateral"}, {ProtoField: "deadline"}},
+				},
 				// this line is used by ignite scaffolding # autocli/tx
 			},
 		},
