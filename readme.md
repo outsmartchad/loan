@@ -1,5 +1,6 @@
-# loan
-**loan** is a blockchain where its module handles loan transactions, and built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
+# loan (Module in Ignite CLI docs)
+## https://docs.ignite.com/guide/loan
+## **loan** is a blockchain where its module handles loan transactions, and built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
 ## Get started
 
